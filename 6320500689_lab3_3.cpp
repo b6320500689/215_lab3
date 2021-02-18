@@ -1,7 +1,6 @@
 #include<stdio.h>
 int main()
 {
-    int a;
     unsigned int k=1,i;
 	if(k>=1 && k<=1000)
 		scanf("%d",&k);
