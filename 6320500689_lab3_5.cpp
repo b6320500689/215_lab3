@@ -1,38 +1,28 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+int main ()
 {
-    int n,a,b=2,c=0;
-    scanf("%d",&n);
-    a=n;
-    
-    while(a!=1)
+    int n,n2,i,k=0,ch;
+    scanf ("%d",&n);
+    n2 = n;
+    for (i=2; ;i++)
     {
-        while(a%b == 0)
+        if (n2%i == 0)
         {
-            a = a/b;
-            
-            if(a%b == 0)
-            {
-                c++;
-                break;
-            }
-            else if(a%b == 1)
-                break;
+            k++;
         }
-        
-        if(c == 1)
+        else
         {
             break;
         }
-        
-        b++;
+
     }
-    
-    if(c == 0)
-        printf("%d is Lucky Number",n);
-        
-    else if (c == 1)
-    printf("%d is not a Lucky Number",n);
-    
+    if (k>3 || k<3)
+    {
+            printf ("%d is not a Lucky Number.",n);
+    }
+        else
+    {
+             printf ("%d is a Lucky Number.",n);
+    }
     return 0;
 }
