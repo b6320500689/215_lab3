@@ -1,8 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    unsigned int k=1,i;
-	if(k>=1 && k<=1000)
+    int k=1,i=2;
 		scanf("%d",&k);
 		
 	if(k == 1)
@@ -14,10 +13,8 @@ int main()
         {
             k = k/i;
             printf("%d\n",i);
-            
-            if(k/i == 0)
-                printf("%d",k/i);
         }
     }
+    printf ("0");
     return 0;
 }
